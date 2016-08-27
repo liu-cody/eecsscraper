@@ -44,7 +44,6 @@ classcount = 0
 while True:
     if classcount == 0:
         classnumber = input('Please enter the number of an EECS class you are taking. Data is based on the Spring 2016 EECS student survey. For example, if you are taking EECS 183, enter "183". If you are done entering classes, press "d". ')
-
     else:
         classnumber = input('Enter the number of another EECS class you are taking or press "d" to quit. ')
 
@@ -58,6 +57,7 @@ while True:
     
             
 print('You have selected classes with a total difficulty of ' + str(round(totalscore, 2)) + '.')
+
 if totalscore > 5:
     print('Just so you know, the EECS department recommends not taking more than 5 points.')
 else:
